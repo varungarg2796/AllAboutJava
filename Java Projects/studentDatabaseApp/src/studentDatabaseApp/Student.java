@@ -27,7 +27,7 @@ public class Student {
 		this.gradeYear = in.nextInt();
 		
 		setStudentID();
-		System.out.println(firstName + " " + lastName + " " + gradeYear + " "+ studentID);
+		//System.out.println(firstName + " " + lastName + " " + gradeYear + " "+ studentID);
 		
 		
 	}
@@ -58,14 +58,14 @@ public class Student {
 			}
 		} while(1!=0);
 		
-		System.out.println("ENROLLED IN:" + courses);
+		//System.out.println("ENROLLED IN:" + courses);
 		System.out.println("Tuition Balance:" + tuitionBalance);
 		
 	}
 	
 	//View balances
 	public void viewBalance() {
-		System.out.println("Your balance is $:" + tuitionBalance);
+		System.out.println("Your balance is: $" + tuitionBalance);
 	}
 	
 	
@@ -80,7 +80,13 @@ public class Student {
 		viewBalance();
 	}
 	
-	//Show status
 	
+	//Show status
+	public String toString() {
+		return "Name: " +firstName + " " + lastName +
+				"\nGrade Level:" + gradeYear + 
+				"\nCourses Enrolled: " + courses +
+				"\nBalance: $" + tuitionBalance;
+	}
 
 }
