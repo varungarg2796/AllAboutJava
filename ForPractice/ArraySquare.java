@@ -26,6 +26,7 @@ public class ArraySquare {
                 charFreq1.put(there, 1);
             }
         }
+
         for( int i=0; i< arr2.length ; i++){
             int there = arr2[i];
             if(charFreq2.containsKey(there)){
