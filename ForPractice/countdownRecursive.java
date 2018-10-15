@@ -12,8 +12,16 @@ public class countdownRecursive{
         countdown(num);
     }
 
+    public static int sumRange(int num){
+        if(num==1){
+            return 1;
+        }
+        return num + sumRange(num-1);
+    }
+
     
     public static void main (String[] args){
-        countdown(5);
+        //countdown(5);
+        System.out.println(sumRange(5));
     }
 }
