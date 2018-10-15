@@ -13,7 +13,7 @@ public class SearchChar {
                 charFreq.put(there, 1);
             }
         }
-        return charFreq.toString();;
+        return charFreq.toString();
 	}
 	
 	public static void main (String[] args) {
