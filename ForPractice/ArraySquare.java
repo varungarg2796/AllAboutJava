@@ -1,3 +1,5 @@
+//FREQUENCY COUNT PATTERN!
+
 // To return true if every value in array has its corresponding value squared in the second array
 // The frequency of the values must be the same
 
