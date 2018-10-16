@@ -61,11 +61,17 @@ public class SearchingAlgos{
         }
         System.out.println("No. of patterns matching are:" + count);
     }
+
+
+
+    //KNP STRING SEARCH LEFT 
+
     public static void main (String[] args){
-        int a[] = {1,3,4,5,6,7,8,9};
+        int a[] = {1,3,4,5,6,7,8,9};    //for both cases below
         //System.out.println(linearSearch(a, 5));
         //System.out.println(binarySearch(a, 8));
 
+        //For naive string search below
         String longString = "lorie loled";
         String shortString = "lol";
         naiveSearch(longString, shortString);
