@@ -27,7 +27,6 @@
                 base++;
                 arr[base] = arr[scout];
             }
-            
         }
         int result = base + 1;
         System.out.println("unique values are " + result);

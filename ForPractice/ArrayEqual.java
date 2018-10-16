@@ -1,4 +1,4 @@
-
+//Checking whether 2 arrays are equal or not 
 public class ArrayEqual {
 	static void  equality_checking_two_arrays(int[] my_array1, int[] my_array2)
 	{

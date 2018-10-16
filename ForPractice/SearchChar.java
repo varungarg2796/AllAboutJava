@@ -1,3 +1,7 @@
+//Searching characters in hashMap
+
+
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,7 +22,7 @@ public class SearchChar {
 	
 	public static void main (String[] args) {
 		System.out.println(SearchC("whatsup"));
-		
+		// {w =1 , h = 1 and so on}
     }
     
     //for ( Character key : map.keySet()){
