@@ -1,5 +1,15 @@
 //LOGIC- Take one element at a time and INSERT it to the correct (sorted) spot.
 
+//Quadratic Sorting algorithm (As complexity is O(n^2)) 
+//Space Complexity O(1)
+/******
+ * Time complexity
+ * Best Case- O(n) -- When data is almost completely sorted then this is good
+ * Average Case- O(n^2)
+ * Worst Case- O(n^2)
+*******/
+
+//When data is almost completely sorted then this is good
 
 public class insertionSort{
 

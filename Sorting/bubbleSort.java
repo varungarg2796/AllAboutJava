@@ -1,6 +1,14 @@
 //Not used a lot
 //Used only when there is nearly sorted data
-//***Time Complexity O(n^2) */
+//Space Complexity O(1)
+//Quadratic Sorting algorithm (As complexity is O(n^2))
+/******
+ * Time complexity
+ * Best Case- O(n)  --Used only when there is nearly sorted data
+ * Average Case- O(n^2)
+ * Worst Case- O(n^2)
+*******/
+
 
 public class bubbleSort{
 
@@ -29,7 +37,7 @@ public class bubbleSort{
             System.out.print(arr[i] + ",");
         }
     }
-    
+
     public static void swap(int[] arr, int index1, int index2){
         int temp = arr[index1];
         arr[index1] = arr[index2];

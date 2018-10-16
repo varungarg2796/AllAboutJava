@@ -1,5 +1,12 @@
 //Logic- Find(SELECT) the minimum from the array by comparing each element to the starting element and then SWAP that element to the front. We compare a lot and make less swaps
-// **Time Complexity** O(n^2)
+//Quadratic Sorting algorithm (As complexity is O(n^2))
+//Space Complexity O(1)
+/******
+ * Time complexity
+ * Best Case- O(n^2)
+ * Average Case- O(n^2)
+ * Worst Case- O(n^2)
+*******/
 
 public class selectionSort{
 
