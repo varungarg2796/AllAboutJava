@@ -6,3 +6,7 @@
 // https://www.toptal.com/developers/sorting-algorithms
 
 // https://visualgo.net/en/sorting another brilliant piece of visual representation
+
+Space complexity for Merge Sort is O(n) while for insertion, bubble and selection, it is O(1).
+
+So while merge sort is very quick, it does take some considerable amount of space.

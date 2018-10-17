@@ -1,3 +1,5 @@
+//Time complexity in all cases is O(log n)
+
 
 
 
