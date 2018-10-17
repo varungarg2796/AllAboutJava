@@ -10,41 +10,64 @@ public class mergeSort{
         System.out.println("");
     }
 
-    public static void merge(int[] arr1, int[] arr2){
-        int[] results = new int[arr1.length+arr2.length];
-        int i = 0;
-        int j = 0;
-        int k =0;
+    public static void merge(
+        int[] a, int[] l, int[] r) {
+         int left = l.length;
+         int right = r.length;
+          int i = 0, j = 0, k = 0;
+          while (i < left && j < right) {
+              if (l[i] < r[j]) {
+                  a[k] = l[i];
+                  i++;
+                  k++;
+              }
+              else {
+                  a[k] = r[j];
+                  k++;
+                  j++;
+              }
+          }
+          while (i < left) {
+              a[k] = l[i];
+              k++;
+              i++;
+          }
+          while (j < right) {
+              a[k] = r[j];
+              k++;
+              j++;
+          }
+          System.out.print("MERGING!!");
+          printArray(a);
+      }
 
-        while(i<arr1.length && j < arr2.length){
-            if(arr2[j] > arr1[i]){
-                results[k] = arr1[i];
-                i++;
-                k++;
-            }else{
-                results[k] = arr2[j];
-                j++;
-                k++;
-            }
+    public static void MergeSort(int[] a) {
+        System.out.print("array a: ");
+        printArray(a);
+        int len = a.length;
+        if (len < 2) {
+            return;
         }
-
-        while(i < arr1.length){
-            results[k] = arr1[i];
-            i++;
-            k++;
+        int mid = len / 2;
+        int[] l = new int[mid];
+        int[] r = new int[len - mid];
+     
+        for (int i = 0; i < mid; i++) {
+            l[i] = a[i];
         }
-
-        while(j < arr2.length){
-            results[k] = arr2[j];
-            j++;
-            k++;
+        for (int i = mid; i < len; i++) {
+            r[i - mid] = a[i];
         }
-        printArray(results);
+        MergeSort(l);
+        MergeSort(r);
+     
+        merge(a, l, r);
     }
+    
     public static void main(String[] args){
-        int a[] = {1,10,15,20,35};
+        int a[] = {10,9,76,73,100};
         int b[] = {2,11,18,30};
 
-        merge(a,b);
+        MergeSort(a);
     }
 }
