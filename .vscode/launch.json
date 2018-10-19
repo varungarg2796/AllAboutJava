@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - quickSort",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "quickSort",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - mergeSort",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "mergeSort",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - maxSubArraySum",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "maxSubArraySum",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SearchChar",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "SearchChar",
+            "args": ""
+        }
+    ]
+}
