@@ -28,6 +28,43 @@ public class LinkedList
         }
     }
 
+    public void insertAt(int index, int data)
+    {
+        Node node = new Node();
+        node.data = data;
+        node.next = null;
+        
+        if(index ==0)
+        {
+            insertAtStart(data);
+        }
+        else
+        {
+            //Traversing the linked list
+            Node n = head;
+            for(int i=0; i<index-1; i++)
+            {
+                n = n.next;
+            }
+            //when you reach the index, do
+
+            //Next of node to be inserted points towards the found of next index
+            node.next = n.next;
+            
+            //Next of found node points towards the node to be inserted
+            n.next = node; 
+        }
+    }
+
+    public void insertAtStart(int data)
+    {
+        Node node = new Node();
+        node.data = data;
+        node.next = null;
+        node.next = head;
+        head = node;
+    }
+
     public void show()
     {
         Node n = head;
