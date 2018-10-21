@@ -7,8 +7,9 @@ public class LinkUse{
         list.insert(5);
         list.insert(100);
         list.insert(200);
-        list.insertAtStart(10);
-        list.insertAt(0, 11);
+        list.deleteAt(1);
+        //list.insertAtStart(10);
+        //list.insertAt(0, 11);
         list.show();
     }
 }
