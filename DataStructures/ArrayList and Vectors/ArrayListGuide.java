@@ -1,3 +1,9 @@
+//http://infotechgems.blogspot.com/2011/11/java-collections-performance-time.html
+//http://bigocheatsheet.com/
+
+// ADD AND GET - O(1)
+
+// Contain and Remove - O(n)
 import java.util.*;
 import java.util.ArrayList;
 public class ArrayListGuide{

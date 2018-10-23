@@ -1,0 +1,10 @@
+
+For complexities
+http://infotechgems.blogspot.com/2011/11/java-collections-performance-time.html
+http://bigocheatsheet.com/
+
+For visualization of sorting and DS
+https://visualgo.net/en/sorting
+
+For visualization of sorting
+https://www.toptal.com/developers/sorting-algorithms
