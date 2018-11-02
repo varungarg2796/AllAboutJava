@@ -8,7 +8,7 @@ Input
 9 (number of socks)
 10 20 20 10 10 30 50 10 20 (socks)
  
-Output
+Output 
 3
 */
 import java.util.HashMap;
