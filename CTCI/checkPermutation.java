@@ -2,6 +2,16 @@
 //"Varun" and "Nurav" will be false! (as it is case sensitive)
 // "varun" and "nurav" will be true!
 
+/**
+Approach taken according to CTCI and me- Time complexity O(n)
+We can also use the definition of a permutation-two words with t
+he same character counts-to imple- ment this algorithm.
+We simply iterate through this code, counting how many times each character appears.
+Then, afterwards, we compare the two arrays.
+*/
+
+//If we want to use a DS, we can use Maps.
+
 
  
 
@@ -42,3 +52,12 @@ public class checkPermutation{
         System.out.println(permutation(a,b));
     }
 }
+/**
+ Alternate solution according to CTCI
+
+ If two strings are permutations, 
+ then we know they have the same characters, but in different orders.
+  Therefore, sorting the strings will put the characters from two 
+  permutations in the same order. We just need to compare the sorted 
+  versions of the strings.
+ */
