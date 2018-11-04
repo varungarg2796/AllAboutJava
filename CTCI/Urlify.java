@@ -19,7 +19,31 @@ Input: "Mr John Smith    ", 13 Output: "Mr%20John%20Smith"
                 spaceCount++;
             }
         }
-        System.out.println(spaceCount);
+        
+        index = trueLength + (spaceCount*2); //17
+        System.out.println(str[trueLength]);
+        if(trueLength < str.length){
+            str[trueLength] = '\0';
+        }
+
+        for(int i = trueLength - 1; i >=0 ; i--){
+            if(str[i] == ' '){
+                str[index - 1] = '0'; 
+                str[index - 2] = '2'; 
+                str[index - 3] = '%'; 
+                index =index - 3;
+                //System.out.println("i "+i);
+                //System.out.println("If "+index);
+            } else{
+                str[index-1] = str[i];
+                index--;
+                System.out.print(str[i]);
+                //System.out.println("Else "+index);            
+            }
+        }
+
+        
+
     }
 
 
@@ -29,7 +53,7 @@ Input: "Mr John Smith    ", 13 Output: "Mr%20John%20Smith"
         // for(int i = 0 ; i<charArray.length;i++){
         //     System.out.println(charArray[i]);
         // }
-        //System.out.println(charArray.length);
+       // System.out.println(charArray.length);
         int trueLength = 13;
         URL(charArray,trueLength);
     }
