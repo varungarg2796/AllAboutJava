@@ -9,3 +9,28 @@ EXAMPLE
 Input: "Mr John Smith    ", 13 Output: "Mr%20John%20Smith"
 
  */
+
+ public class Urlify{
+
+    static void URL(char[] str, int trueLength){
+        int spaceCount = 0, index;
+        for(int i = 0; i<trueLength;i++){
+            if(str[i] == ' '){
+                spaceCount++;
+            }
+        }
+        System.out.println(spaceCount);
+    }
+
+
+    public static void main (String[] args){
+        String s= "Mr John Smith      ";
+        char[] charArray = s.toCharArray();
+        // for(int i = 0 ; i<charArray.length;i++){
+        //     System.out.println(charArray[i]);
+        // }
+        //System.out.println(charArray.length);
+        int trueLength = 13;
+        URL(charArray,trueLength);
+    }
+ }
