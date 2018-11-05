@@ -19,7 +19,6 @@ public class BestTimeToBuyAndSellStock{
     static int MaxProfit(int[] arr){
         int min = arr[0]; //current prices of stock
         int max = 0;
-
         for(int i=1; i<arr.length;i++){
             if(arr[i] > min){ //If stock price of next year is greater than the current stock price
                 max = Math.max(max, arr[i]-min); // find out whether the profit gained is greater than the current max profit
