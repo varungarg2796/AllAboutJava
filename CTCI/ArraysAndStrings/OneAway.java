@@ -12,6 +12,16 @@ pale, bae -) false
  */
 
 
+ //Time complexity - O(n)
+
+ //3 things possible
+ /**
+  1) replacement (length remains the same)
+  2) Addition (length of first increases by 1) 
+  3) Deletion (length of both decreases by 1)
+
+*/
+
 public class OneAway{
 
     static boolean oneaway(String first, String second){
@@ -27,15 +37,14 @@ public class OneAway{
         return false;
     }
 
-
     static boolean replacement(String first, String second){
-        int count = 0;
+        int count = 0; //count no. of dissimilarities
         for(int i=0; i<first.length();i++){
             if(first.charAt(i)!=second.charAt(i)){
                 count++;
             }
         }
-        if(count > 1){
+        if(count > 1){ //if more than one dissimilar chars then print false
             return false;
         }
         else{
@@ -44,13 +53,12 @@ public class OneAway{
     }
 
     static boolean OneAdd(String first, String second){
-
         int index1 = 0;
         int index2 = 0;
-
         //pale
         //ale
         while(index1 < first.length() && index2 < second.length()){
+            //If there is a dissimilarity and the indexes are different, return false
             if(first.charAt(index1)!=first.charAt(index2)){
                 if(index1 != index2){
                     return false;
@@ -61,6 +69,7 @@ public class OneAway{
                 index2++;
             }
         }
+        //if you survive dissimilarity test, print false.
         return true;
     }
 
