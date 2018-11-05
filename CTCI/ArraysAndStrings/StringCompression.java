@@ -14,9 +14,9 @@ public class StringCompression{
         StringBuilder compressed = new StringBuilder();
         int consecutiveCount = 0;
 
-        for(int i=0 ; i<s.length();i++){
+        for(int i=0 ; i<s.length();i++){ 
             consecutiveCount++;
-            if( i+1>=s.length() || s.charAt(i)!=s.charAt(i+1) ){
+            if( i+1>=s.length() || s.charAt(i)!=s.charAt(i+1) ){ //If i becomes equal or greater to the size of string OR if 2 characters next to each other are not the same
                 compressed.append(s.charAt(i));
                 compressed.append(consecutiveCount);
                 consecutiveCount = 0;
