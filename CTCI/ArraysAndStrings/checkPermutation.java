@@ -13,7 +13,6 @@ Then, afterwards, we compare the two arrays.
 //If we want to use a DS, we can use Maps.
 
 
- 
 
 public class checkPermutation{
 
