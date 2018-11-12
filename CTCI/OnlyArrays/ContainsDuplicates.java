@@ -3,6 +3,13 @@
 //j in the array such that nums[i] = nums[j] and the absolute difference 
 //between i and j is at most k.
 
+//Input-
+//{1,0,1,1,0,0} , 3
+
+//Output- 
+//true
+
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,8 +29,8 @@ class ContainsDuplicates {
     }
 
     public static void main (String[] args){
-        int[] a = {1,2,1,4,5,6};
-        System.out.println(containsNearbyDuplicate(a, 1));
+        int[] a = {1,0,1,1,0,0};
+        System.out.println(containsNearbyDuplicate(a, 3));
         
     }
 }
