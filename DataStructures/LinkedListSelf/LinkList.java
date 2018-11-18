@@ -53,6 +53,23 @@ public class LinkList{
         System.out.println(previousNode.data);
 
     }
+
+    public void deleteByVal(int val){
+
+        if(head.data == val){
+            head = head.next;
+        }else{
+
+            Node temp = head;
+            Node previousNode = head;
+            
+            while(temp.data!= val){
+                previousNode = temp;
+                temp = temp.next;
+            }
+            previousNode.next = temp.next;
+        }
+    }
     public static void main(String[] args){
         LinkList list = new LinkList();
 
@@ -60,7 +77,8 @@ public class LinkList{
         list.add(1);
         list.add(2);
         list.add(3);
-        list.delete(1);
+        list.deleteByVal(1);
+        
         list.display();
     }
 
