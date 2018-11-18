@@ -25,6 +25,18 @@ public class LinkList{
         }
     }
 
+    public void reverse() { 
+        Node prev = null; 
+        Node current = head; 
+        Node next = null; 
+        while (current != null) { 
+            next = current.next; 
+            current.next = prev; 
+            prev = current; 
+            current = next; 
+        } 
+        node = prev; 
+    } 
     public void display (){
 
         //Initialise a temp node to head and traverse
