@@ -25,17 +25,19 @@ public class LinkList{
         }
     }
 
+    //https://www.geeksforgeeks.org/reverse-a-linked-list/
     public void reverse() { 
+        // 1 -> 2 ->3 -> 4 - > 5
         Node prev = null; 
-        Node current = head; 
+        Node current = head;  //current = 1
         Node next = null; 
         while (current != null) { 
-            next = current.next; 
-            current.next = prev; 
-            prev = current; 
-            current = next; 
+            next = current.next; // next = 2
+            current.next = prev;  // null <- 1
+            prev = current;  // prev <- 1
+            current = next;  // current =2 
         } 
-        node = prev; 
+        head = prev; 
     } 
     public void display (){
 
@@ -89,8 +91,10 @@ public class LinkList{
         list.add(1);
         list.add(2);
         list.add(3);
-        list.deleteByVal(1);
-        
+        list.add(4);
+        list.add(5);
+        //list.deleteByVal(1);
+        list.reverse();
         list.display();
     }
 
