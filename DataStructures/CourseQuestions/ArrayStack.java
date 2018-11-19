@@ -48,6 +48,7 @@ public class ArrayStack {
         }
         return "" + size + "\t" + output;
     }
+
     public static void main(String[] args) {
         ArrayStack s = new ArrayStack();
         System.out.println(s);

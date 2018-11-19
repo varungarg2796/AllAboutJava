@@ -1,4 +1,6 @@
-public class LinkedStack {
+import java.util.EmptyStackException;
+
+public class PCQ2L {
     public class Node {
         Object element;
         Node next;
@@ -15,7 +17,7 @@ public class LinkedStack {
     int size;
     Node top;
 
-    public LinkedStack() {
+    public PCQ2L() {
         top = null;
         size = 0;
     }
@@ -66,22 +68,30 @@ public class LinkedStack {
     }
 
     public static void main(String[] args) {
-        LinkedStack s = new LinkedStack();
-        // stack.push("Hey");
-        // System.out.println(stack.toString());
-        // stack.push("Ho");
-        // System.out.println(stack.toString());
-        // stack.pop();
-        // System.out.println(stack.toString());
+        PCQ2L s = new PCQ2L();
 
-        // ArrayStack s = new ArrayStack();
         System.out.println(s);
-        s.push("A");
+        s.push('e');
         System.out.println(s);
-        s.push("B");
+        s.push('s');
         System.out.println(s);
-        s.push("C");
+        s.push('c');
         System.out.println(s);
-        // stack.toString();
+        s.pop();
+        System.out.println(s);
+        s.push('u');
+        System.out.println(s);
+        s.push('a');
+        System.out.println(s);
+        s.pop();
+        System.out.println(s);
+        s.push('o');
+        System.out.println(s);
+        s.push('t');
+        System.out.println(s);
+        s.pop();
+        System.out.println(s);
+        s.push('h');
+        System.out.println(s);
     }
 }
