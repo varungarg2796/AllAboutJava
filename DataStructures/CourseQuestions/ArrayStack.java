@@ -1,38 +1,38 @@
-import java.util.NoSuchElementException;
+import java.util.EmptyStackException;
 
 public class ArrayStack {
-    private Object[] array;
+    private Object[] arr;
     private int size = 0;
 
-    public ArrayStack() {
-        array = new Object[1000];
-    }
-
-    public void push(Object item) {
-        if (size == array.length) {
-            throw new IllegalStateException("Cannot add to full stack");
-        }
-        array[size++] = item;
+    public boolean isEmpty() {
+        return size == 0;
     }
 
     public Object pop() {
         if (size == 0) {
-            throw new NoSuchElementException("Cannot pop from empty stack");
+            throw new EmptyStackException();
         }
-        Object result = array[size-1];
-        array[--size] = null;
-        return result;
+        Object toBePopped = arr[size - 1];
+        arr[--size] = null;
+        return toBePopped;
+    }
+
+    public ArrayStack() {
+        arr = new Object[1000];
+    }
+
+    public void push(Object item) {
+        if (size == arr.length) {
+            throw new StackOverflowError();
+        }
+        arr[size++] = item;
     }
 
     public Object top() {
         if (size == 0) {
-            throw new NoSuchElementException("Cannot peek into empty stack");
+            throw new EmptyStackException();
         }
-        return array[size - 1];
-    }
-
-    public boolean isEmpty() {
-        return size == 0;
+        return arr[size - 1];
     }
 
     public int size() {
@@ -42,21 +42,20 @@ public class ArrayStack {
     public String toString() {
         int i = 0;
         String output = "";
-        while(i<size){
-            output +=  array[i] + " " ;
+        while (i < size) {
+            output += arr[i] + " ";
             i++;
         }
         return "" + size + "\t" + output;
-        }
-
+    }
     public static void main(String[] args) {
         ArrayStack s = new ArrayStack();
         System.out.println(s);
-        s.push("a");
+        s.push("A");
         System.out.println(s);
-        s.push("b");
+        s.push("B");
         System.out.println(s);
-        s.push("c");
+        s.push("C");
         System.out.println(s);
     }
 }
